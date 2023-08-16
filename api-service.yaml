@@ -10,7 +10,7 @@ spec:
   ports:
     - name: http
       protocol: TCP
-      port: 49160
+      port: 80
       targetPort: 9000
   selector:
     app: api
