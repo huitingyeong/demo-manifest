@@ -19,7 +19,10 @@ spec:
         app: web  
     spec:
       containers:
-        - image: huitingyeong/market-frontend:latest
+        - env:
+            - name: REACT_APP_API_URL
+              value: http://34.36.136.80
+          image: huitingyeong/market-frontend:4
           name: web
           ports:
             - containerPort: 3000

@@ -14,11 +14,6 @@ spec:
       targetPort: 9000
   selector:
     app: api
-  type: LoadBalancer
-  sessionAffinity: None
-  externalTrafficPolicy: Cluster
-  ipFamilyPolicy: SingleStack
-  allocateLoadBalancerNodePorts: true
-  internalTrafficPolicy: Cluster
+  type: NodePort
 status:
   loadBalancer: {}
